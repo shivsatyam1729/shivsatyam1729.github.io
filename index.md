@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Satyam
+title: About 
 ---
 
 I am a machine learning engineer with a background in competitive programming and a past life in web development. A few years ago, I stepped away from building web applications to focus more deeply on mathematics, algorithms, and machine learning.
