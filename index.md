@@ -1,11 +1,9 @@
 ---
-layout: about
-title: About 
+#
+# By default, content added below the "---" mark will appear in the home page
+# between the top bar and the list of recent posts.
+# To change the home page layout, edit the _layouts/home.html file.
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+#
+layout: home
 ---
-
-I am a machine learning engineer with a background in competitive programming and a past life in web development. A few years ago, I stepped away from building web applications to focus more deeply on mathematics, algorithms, and machine learning.
-
-Despite moving away from web development, I still appreciate good engineering. Clean systems. Minimal design. Focused tools.
-
-If something interests me, I will think about it deeply and probably write about it here.
-<br><br>
