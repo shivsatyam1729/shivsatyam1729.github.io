@@ -7,6 +7,4 @@ I am a machine learning engineer with a background in competitive programming an
 
 Despite moving away from web development, I still appreciate good engineering. Clean systems. Minimal design. Focused tools.
 
-And yes, I am very talkative.
-
 If something interests me, I will think about it deeply and probably write about it here.
