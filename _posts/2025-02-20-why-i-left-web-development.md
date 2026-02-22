@@ -39,8 +39,6 @@ for(let i = 1; i <= n; i++) {
 }
 ```
 
-and 
-
 Another way is to recognize the structure and write:
 ```js
 let n = 100;
