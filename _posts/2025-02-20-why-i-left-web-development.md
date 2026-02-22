@@ -4,8 +4,6 @@ title: "Why I Left Web Development and What I Gained"
 date: 2026-02-22
 ---
 
-## Why I Left Web Development and What I Gained
-
 I used to build web applications. Full stacks, APIs, interfaces. At some point, I stopped. Not suddenly, but deliberately. 
 I didn’t lose anything, I gained a lot of intuition and ideas. Some i would love sharing in the future.
 
