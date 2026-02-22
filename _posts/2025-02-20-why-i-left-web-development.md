@@ -29,6 +29,26 @@ I ended up learning a lot more mathematics than I expected. My entry points were
 
 In comparison, web development often kept me closer to implementation. It was structured and useful, but it rarely pushed me to think at the level I was beginning to enjoy.
 
+Imagine you are asked to compute the sum of the first 𝑛 natural numbers.
+
+One way is purely iterative:
+```js
+let n = 100, sum = 0;
+for(let i = 1; i <= n; i++) {
+  sum += i;
+}
+```
+
+and 
+
+Another way is to recognize the structure and write:
+```js
+let n = 100;
+let sum = n * (n + 1) / 2;
+```
+
+Both give the same result, but they come from very different modes of thinking. The first works step by step. The second compresses the entire process into a single expression by understanding the pattern underneath. I would be more excited by the second sort of implementation. This colud potentionally explain my shift towards machine learning.
+
 ### What I did not lose
 
 I did not really lose anything. If anything, web development gave me a strong sense of implementation. I still remember details from past projects, from design decisions to debugging mistakes, and that carries over.
