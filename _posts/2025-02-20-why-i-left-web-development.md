@@ -6,6 +6,7 @@ date: 2026-02-22
 
 I used to build web applications. Full stacks, APIs, interfaces.  
 At some point, I stopped. Not suddenly, but deliberately.
+<!--more-->
 
 ## Why I Left Web Development and What I Gained
 
