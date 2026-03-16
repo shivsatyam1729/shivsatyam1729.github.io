@@ -59,6 +59,10 @@ The $r$ value is bounded between $[-1, 1]$. Well, naturally someone would rememb
 
 Because in general, 
 
+$\vec{a} \cdot \vec{b} = \|\vec{a}\| \, \|\vec{b}\| \, \cos(\theta)$
+
+$\cos(\theta) = \frac{\vec{a} \cdot \vec{b}}{\|\vec{a}\| \, \|\vec{b}\|}$
+
 $\vec{a} \cdot \vec{b} = |a||b|cos(\theta)$
 
 $cos(\theta) = \dfrac{\vec{a} \cdot \vec{b}}{|a||b|}$
@@ -198,3 +202,16 @@ If the variables were actually independent, how likely would it be to see a chi 
 How significant is the p-value? Let me tell you something about its history. The p-value became so significant that people started taking it as a school project. People did something that later became known as "p-value hacking". They repeated experiments multiple times just to get a p value close to 0.05, which is sometimes called the alpha value.
 
 We don't need a threshold like $0.05$, we need perfect confidence scores and variations in sample spaces. 
+
+## Conclusion
+
+In this post, we explored some foundational concepts in statistics introduced by Karl Pearson. The Pearson correlation coefficient quantifies the linear relationship between two variables, providing a normalized and bounded measure of association. The Chi squared test allows us to assess whether two categorical variables are independent by comparing observed and expected counts. We also discussed the p-value and its history.
+
+## References
+
+1. Pearson, K. (1895). "Notes on regression and inheritance in the case of two parents." *Proceedings of the Royal Society of London*, 58, 240–242.  
+2. Pearson, K. (1900). "On the criterion that a given system of deviations from the probable in the case of a correlated system of variables is such that it can be reasonably supposed to have arisen from random sampling." *Philosophical Magazine*, 50, 157–175.  
+3. Moore, D. S., McCabe, G. P., & Craig, B. A. (2021). *Introduction to the Practice of Statistics*. 10th Edition. W. H. Freeman.  
+4. `pandas.Series.corr` documentation: https://pandas.pydata.org/docs/reference/api/pandas.Series.corr.html  
+5. `numpy.corrcoef` documentation: https://numpy.org/doc/stable/reference/generated/numpy.corrcoef.html  
+6. `scipy.stats.chi2_contingency` documentation: https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.chi2_contingency.html
