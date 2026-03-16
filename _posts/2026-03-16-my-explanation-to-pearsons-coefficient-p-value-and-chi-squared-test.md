@@ -4,9 +4,8 @@ title: "My explanation to Pearson's coefficient, p-value and chi squared test"
 date: 2026-03-16
 ---
 
-# My explanation to Pearson's coefficient, p-value and chi squared test
-
 Pearson was an extraordinary man, probably one of the most important figures in the history of statistics. His teacher was also a half cousin to Charles Darwin.
+
 ## Pearson's coefficient
 The Pearsons coefficient is also called the r-value of two data points. Let us define a pair of variables the Pearsons coefficient, the correlation between them is given by a formula.
 
@@ -24,9 +23,11 @@ Lets assume that we have two data columns, height and weight.
 
 
 
-What do we mean when we want the covariance between $H, W$ denoting height and weight respectively. Let me define $\bar{H}$, $\bar{W}$ as the expected value of $H,W$ respectively. If we look at the formula of covariance, we get a formula like 
+What do we mean when we want the covariance between $H, W$ denoting height and weight respectively. Let me define $\bar{H}$, $\bar{W}$ as the expected value of $H,W$ respectively. If 
+we look at the formula of covariance, we get a formula like 
  
- $$Cov(H,W)=\sum_{i=0}^n (H_i - E[H]) \cdot (W_i - E[W])$$
+$Cov(H,W)=\sum_{i=0}^n (H_i - E[H]) \cdot (W_i - E[W])$
+
 
 where $cov$'s the covariance between $X, Y$ and respective sigmas represent the standard deviation of the Pearsons coefficient. But why is correlation dependent on covariance of the Pearsons coefficient?
 
@@ -57,15 +58,16 @@ print(r)
 The $r$ value is bounded between $[-1, 1]$. Well, naturally someone would remember the fundamental trigonometric functions like $sinx$ and $cosx$. The range of $cosx$ is $[-1, 1]$ and we already have techniques like cosine similarity with vectors. If you look closely, the formula i mentioned above (with normalization) looks like the angle between two vectors. 
 
 Because in general, 
-$\vec{a} \cdot \vec{b} = |a||b|cos(\theta) \\ cos(\theta) = \dfrac{\vec{a} \cdot \vec{b}}{|a||b|}$
+
+$\vec{a} \cdot \vec{b} = |a||b|cos(\theta)$
+
+$cos(\theta) = \dfrac{\vec{a} \cdot \vec{b}}{|a||b|}$
 
 I mean if a basic technique like cosine similarity is used for RAGs or extraction of tokens from multilingual embedding spaces why not statistics.
 
 Also, pretty irrelevant but could be useful for intuition. 
 
 Start with the definition of covariance:
-
-||hello||
 
 $\mathrm{Cov}(X,Y) = E[(X - E[X])(Y - E[Y])]$ 
 
@@ -82,7 +84,9 @@ $E[XY] - E[XE[Y]] - E[YE[X]] + E[E[X]E[Y]]$
 Since \(E[X]\) and \(E[Y]\) are constants,
 
 $E[XE[Y]] = E[X]E[Y]$
+
 $E[YE[X]] = E[X]E[Y]$
+
 $E[E[X]E[Y]] = E[X]E[Y]$
 
 
@@ -185,7 +189,7 @@ Assuming that the null hypothesis is true. The two columns $X$ and $Y$ are indep
 
 It is mathematically defined as,  
 
-$p = P(\chi^2 \geq \chi_{observed}^2 \space| \space H_o)$
+$p = P(X \geq \chi^2_{\text{observed}} \mid H_0)$
 
 which can be read as the probability of getting a $\chi$ greater than the observed chi given that the "**null hypothesis is true**".
 
