@@ -11,4 +11,10 @@ The Pearsons coefficient is also called the r-value of two data points. Let us d
 
 The formula is
 
-$\rho_{xy} = \dfrac{cov(X, Y)}{\sigma_X \cdot \sigma_Y}$
+```math
+\rho_{xy} = \dfrac{cov(X, Y)}{\sigma_X \cdot \sigma_Y}
+```
+
+| Height | Weight |
+|--------|--------|
+| 160    | 55     |
