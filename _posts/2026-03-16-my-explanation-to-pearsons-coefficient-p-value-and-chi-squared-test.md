@@ -12,7 +12,17 @@ The Pearson coefficient is also called the **r value** of two data points. Let u
 
 The formula is
 
+```math
+\rho_{xy} = \dfrac{cov(X, Y)}{\sigma_X \cdot \sigma_Y}
+
 $\rho_{xy} = \dfrac{cov(X, Y)}{\sigma_X \cdot \sigma_Y}$
+```
+
+$$
+\chi^2 = \sum \frac{(O_{ij}-E_{ij})^2}{E_{ij}}
+$$
+
+$`x^2
 
 Lets assume that we have two data columns, height and weight.
 
