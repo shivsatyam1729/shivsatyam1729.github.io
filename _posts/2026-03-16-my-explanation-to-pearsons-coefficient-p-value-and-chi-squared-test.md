@@ -63,10 +63,6 @@ $\vec{a} \cdot \vec{b} = \|\vec{a}\| \, \|\vec{b}\| \, \cos(\theta)$
 
 $\cos(\theta) = \frac{\vec{a} \cdot \vec{b}}{\|\vec{a}\| \, \|\vec{b}\|}$
 
-$\vec{a} \cdot \vec{b} = |a||b|cos(\theta)$
-
-$cos(\theta) = \dfrac{\vec{a} \cdot \vec{b}}{|a||b|}$
-
 I mean if a basic technique like cosine similarity is used for RAGs or extraction of tokens from multilingual embedding spaces why not statistics.
 
 Also, pretty irrelevant but could be useful for intuition. 
@@ -212,6 +208,6 @@ In this post, we explored some foundational concepts in statistics introduced by
 1. Pearson, K. (1895). "Notes on regression and inheritance in the case of two parents." *Proceedings of the Royal Society of London*, 58, 240–242.  
 2. Pearson, K. (1900). "On the criterion that a given system of deviations from the probable in the case of a correlated system of variables is such that it can be reasonably supposed to have arisen from random sampling." *Philosophical Magazine*, 50, 157–175.  
 3. Moore, D. S., McCabe, G. P., & Craig, B. A. (2021). *Introduction to the Practice of Statistics*. 10th Edition. W. H. Freeman.  
-4. `pandas.Series.corr` documentation: https://pandas.pydata.org/docs/reference/api/pandas.Series.corr.html  
-5. `numpy.corrcoef` documentation: https://numpy.org/doc/stable/reference/generated/numpy.corrcoef.html  
-6. `scipy.stats.chi2_contingency` documentation: https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.chi2_contingency.html
+4. [`pandas.Series.corr` documentation](https://pandas.pydata.org/docs/reference/api/pandas.Series.corr.html)  
+5. [`numpy.corrcoef` documentation](https://numpy.org/doc/stable/reference/generated/numpy.corrcoef.html)  
+6. [`scipy.stats.chi2_contingency` documentation](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.chi2_contingency.html)
