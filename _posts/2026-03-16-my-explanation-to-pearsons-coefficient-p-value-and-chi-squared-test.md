@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "My explanation to Pearson's coefficient, p-value and chi squared test"
