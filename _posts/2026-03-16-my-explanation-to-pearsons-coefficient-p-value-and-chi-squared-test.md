@@ -24,8 +24,9 @@ Lets assume that we have two data columns, height and weight.
 
 
 
-What do we mean when we want the covariance between $H, W$ denoting height and
- weight respectively. Let me define $\bar{H}$, $\bar{W}$ as the expected value of $H,W$ respectively. If we look at the formula of covariance, we get a formula like $$Cov(H,W)=\sum_{i=0}^n (H_i - E[H]) \cdot (W_i - E[W])$$
+What do we mean when we want the covariance between $H, W$ denoting height and weight respectively. Let me define $\bar{H}$, $\bar{W}$ as the expected value of $H,W$ respectively. If we look at the formula of covariance, we get a formula like 
+ 
+ $$Cov(H,W)=\sum_{i=0}^n (H_i - E[H]) \cdot (W_i - E[W])$$
 
 where $cov$'s the covariance between $X, Y$ and respective sigmas represent the standard deviation of the Pearsons coefficient. But why is correlation dependent on covariance of the Pearsons coefficient?
 
@@ -53,27 +54,44 @@ r = np.corrcoeff(x, y)[0, 1]
 print(r)
 ```
 
-The $r$ value is bounded between $[-1, 1]$. Well, naturally someone would remember the fundamental trigonometric functions like $sinx$ and $cosx$. The range of $cosx$ is $[-1, 1]$ and we already have techniques like cosine similarity with vectors. If you look closely, the formula i mentioned above (with normalization) looks like the angle between two vectors. Because in general, $$\vec{a} \cdot \vec{b} = |a||b|cos(\theta) \\ cos(\theta) = \dfrac{\vec{a} \cdot \vec{b}}{|a||b|}$$
+The $r$ value is bounded between $[-1, 1]$. Well, naturally someone would remember the fundamental trigonometric functions like $sinx$ and $cosx$. The range of $cosx$ is $[-1, 1]$ and we already have techniques like cosine similarity with vectors. If you look closely, the formula i mentioned above (with normalization) looks like the angle between two vectors. 
+
+Because in general, 
+$\vec{a} \cdot \vec{b} = |a||b|cos(\theta) \\ cos(\theta) = \dfrac{\vec{a} \cdot \vec{b}}{|a||b|}$
 
 I mean if a basic technique like cosine similarity is used for RAGs or extraction of tokens from multilingual embedding spaces why not statistics.
 
-Also, pretty irrelevant but could be useful for intuition. Start with the definition of covariance:
+Also, pretty irrelevant but could be useful for intuition. 
+
+Start with the definition of covariance:
+
+||hello||
 
 $\mathrm{Cov}(X,Y) = E[(X - E[X])(Y - E[Y])]$ 
+
 $(X - E[X])(Y - E[Y]) = XY - X E[Y] - Y E[X] + E[X]E[Y]$
+
 $E[XY - X E[Y] - Y E[X] + E[X]E[Y]]$
 
+
 Using linearity of expectation,
+
 $E[XY] - E[XE[Y]] - E[YE[X]] + E[E[X]E[Y]]$
 
+
 Since \(E[X]\) and \(E[Y]\) are constants,
+
 $E[XE[Y]] = E[X]E[Y]$
 $E[YE[X]] = E[X]E[Y]$
 $E[E[X]E[Y]] = E[X]E[Y]$
 
+
 Substitute back:
+
 $E[XY] - E[X]E[Y] - E[X]E[Y] + E[X]E[Y]$
+
 $\mathrm{Cov}(X,Y) = E[XY] - E[X]E[Y]$
+
 
 Thats it. Simple high-school probability gives you such a simple formula. Just look at the expression. If we assume that $X=Y$ (the distributions are same), $E[XY]-E[X]E[Y]=0$. Which gives such a good intuition to covariance.   
 
@@ -81,17 +99,13 @@ Thats it. Simple high-school probability gives you such a simple formula. Just l
 
 Pearson also developed the Chi squared test. The Chi squared test checks whether two variables are independent. What do we mean by independent variables though? Suppose that $P(X)$ and $P(Y)$ are such that
 
-$$
-P(X,Y) = P(X)\cdot P(Y).
-$$
+$P(X,Y) = P(X)\cdot P(Y)$
 
 If two variables are independent, the value of one variable does not affect the probability distribution of the other.
 
 For each cell in the table, we compute
 
-$$
-\frac{(O_{ij} - E_{ij})^2}{E_{ij}}
-$$
+$\frac{(O_{ij} - E_{ij})^2}{E_{ij}}$
 
 where
 
@@ -100,9 +114,7 @@ $E_{ij}$ is the **expected** frequency in cell $i,j$
 
 The full Chi squared statistic is
 
-$$
-\boxed{\chi^2 = \sum \frac{(O_{ij} - E_{ij})^2}{E_{ij}}.}
-$$
+$\boxed{\chi^2 = \sum \frac{(O_{ij} - E_{ij})^2}{E_{ij}}}$
 
 For an intuitive explanation for people who don't like reading Wikipedia, I would give you the best explanation I could give.
 
@@ -154,9 +166,7 @@ $\frac{(2 - 1.5)^2}{1.5} = 0.1667$
 
 Since there are four cells in the table,
 
-$$
-\chi^2 \approx 4 \cdot 0.1667 = 0.67.
-$$
+$\chi^2 \approx 4 \cdot 0.1667 = 0.67$
 
 This value measures how far the observed counts deviate from the counts we would expect if Feature 1 and the target were independent.
 
@@ -170,7 +180,6 @@ chi2, p, _, _ = chi2_contingency(table)
 print(chi2, p)
 ```
 ## The brilliance of Pearson and p-value
-
 
 Assuming that the null hypothesis is true. The two columns $X$ and $Y$ are independent and still give a high chi-squared test.
 
