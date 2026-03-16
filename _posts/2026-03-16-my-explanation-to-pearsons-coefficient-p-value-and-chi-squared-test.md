@@ -1,17 +1,19 @@
+
 ---
 layout: post
 title: "My explanation to Pearson's coefficient, p-value and chi squared test"
 date: 2026-03-16
 ---
 
-Pearson was an extraordinary man, probably one of the most important figures in the history of statistics. His teacher was also a half cousin to Charles Darwin.
+Pearson was an extraordinary man, probably one of the most important figures in the history of statistics. In this blog, I will write my explanation to classic statistics metrics.
 
 ## Pearson's coefficient
-The Pearsons coefficient is also called the r-value of two data points. Let us define a pair of variables the Pearsons coefficient, the correlation between them is given by a formula.
-
-The formula is
+The Pearsons coefficient is also called the r-value of two data points. Let us define a pair of variables, then the correlation between them is given by the formula
 
 $\rho_{xy} = \dfrac{cov(X, Y)}{\sigma_X \cdot \sigma_Y}$
+
+
+where $cov$ is the covariance between $X, Y$ and $\sigma_X$ . But why is correlation dependent on covariance of the Pearsons coefficient?
 
 Lets assume that we have two data columns, height and weight.
 
@@ -23,18 +25,18 @@ Lets assume that we have two data columns, height and weight.
 
 
 
-What do we mean when we want the covariance between $H, W$ denoting height and weight respectively. Let me define $\bar{H}$, $\bar{W}$ as the expected value of $H,W$ respectively. If 
-we look at the formula of covariance, we get a formula like 
+What do we mean when we want the covariance between $H, W$ denoting height and weight respectively? Let me define $\bar{H}$, $\bar{W}$ as the expected value of $H,W$ respectively. 
+
+If we look at the formula of covariance, we see something like
  
 $Cov(H,W)=\sum_{i=0}^n (H_i - E[H]) \cdot (W_i - E[W])$
 
 
-where $cov$'s the covariance between $X, Y$ and respective sigmas represent the standard deviation of the Pearsons coefficient. But why is correlation dependent on covariance of the Pearsons coefficient?
 
-Observe that two values are correlated, they move smoothly with each other. If one moves above the mean the other moves above the average too. If one moves above the average and one moves below the average, we get a negative correlation.
+Observe that two values are correlated, they move smoothly with each other. If one moves above the mean the other moves above the mean too. If one moves above the average and one moves below the average, we get a negative correlation.
  
 
-For example, in some example if $H_i < E[H]$ and $W_i > E[W]$, we get a negative product and it contributes negatively in the total sum.
+For example, in some case if $H_i < E[H]$ and $W_i > E[W]$, we get a negative product and it contributes negatively in the total sum.
 
 But the formula i mentioned at the top of the introduction has two standard deviations in the denominator. What is it? Well, for a coefficient it is pretty necessary that we get a bounded and dimensionless answer. Its exactly why we have the scaling factor ($\sigma_X \cdot \sigma_Y$).
 
@@ -65,7 +67,7 @@ $\cos(\theta) = \frac{\vec{a} \cdot \vec{b}}{\|\vec{a}\| \, \|\vec{b}\|}$
 
 I mean if a basic technique like cosine similarity is used for RAGs or extraction of tokens from multilingual embedding spaces why not statistics.
 
-Also, pretty irrelevant but could be useful for intuition. 
+Also, the below derivation is pretty irrelevant but could be useful for intuition. 
 
 Start with the definition of covariance:
 
