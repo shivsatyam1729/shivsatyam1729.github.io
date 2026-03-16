@@ -4,8 +4,6 @@ title: "My explanation to Pearson's coefficient, p-value and chi squared test"
 date: 2026-03-16
 ---
 
-# My explanation to Pearson's coefficient, p-value and chi squared test
-
 Pearson was an extraordinary man, probably one of the most important figures in the history of statistics. His teacher was also a half cousin to Charles Darwin.
 
 ## Pearson's coefficient
