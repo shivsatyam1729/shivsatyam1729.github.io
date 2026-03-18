@@ -10,19 +10,19 @@ The idea of uniqueness in electrostatics bothered me when i first studied it. Ev
 
 In general, for a warmup, Lets take a simple surface bounding some volume with density  $\rho$.
 
-<img width="293" height="234" alt="image" src="https://github.com/user-attachments/assets/c0724210-9565-4926-bc12-26675009c4c6" />
+<img width="400" height="234" alt="image" src="https://github.com/user-attachments/assets/c0724210-9565-4926-bc12-26675009c4c6" />
 
 Now, for this surface, we could say $\boxed{\vec{\nabla} \cdot \vec{E} = \dfrac{\rho}{\epsilon_o}}$, where $\vec{\nabla} = \dfrac{\partial}{\partial x}\hat{i} + \dfrac{\partial}{\partial y}\hat{j} + \dfrac{\partial}{\partial z}\hat{k}$. The equation I wrote is called the Poisson’s equation. But $-\vec{\nabla} \phi = \vec{E}$ which, in general terms is basically $-\vec{E} \cdot \vec{dr} = d\phi$.
 
 Substituting Laplace’s idea in **Poisson’s** equation, we get $-\nabla^2 \phi = \dfrac{\rho}{\epsilon_o}$. If $\rho = 0$, the equation we get is called the ‘**Laplace’s equation**’. What does this even mean? Well if $\rho = 0$, there are no bound/free charges in the hypothetical surface.
 
-<img width="294" height="232" alt="image" src="https://github.com/user-attachments/assets/de4dde16-6791-48f1-bf41-34dfcd56f7a3" />
+<img width="400" height="232" alt="image" src="https://github.com/user-attachments/assets/de4dde16-6791-48f1-bf41-34dfcd56f7a3" />
 
 ### Analyzing an uniform spherical surface
 
 Lets assume an uniformly charged sphere has a potential function such that $V = V(r, \theta, \phi)$ in spherical coordinates. Where $\theta$ is the polar angle and $\phi$ is the azimuthal angle. For more information, read more about spherical coordinates.
 
-<img width="491" height="368" alt="image" src="https://github.com/user-attachments/assets/5d6f2b29-fb4b-4e4c-ad95-d40c791b29a6" />
+<img width="400" height="368" alt="image" src="https://github.com/user-attachments/assets/5d6f2b29-fb4b-4e4c-ad95-d40c791b29a6" />
 
 
 From $-\nabla^2\phi = \dfrac{\rho}{\epsilon_o}$,
