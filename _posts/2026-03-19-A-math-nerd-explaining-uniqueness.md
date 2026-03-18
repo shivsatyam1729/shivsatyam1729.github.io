@@ -1,22 +1,29 @@
-The idea of **uniqueness** in electrostatics used to bother me. Every other explanation covering **uniqueness** always revolved around boundary conditions. Why can there not be multiple potential functions satisfying the same equation and the same boundary values?
+---
+layout: post
+title: "A math nerd's explanation to uniqueness, laplacian and divergence"
+date: 2026-03-16
+---
+
+The idea of **uniqueness** in electrostatics bothered me when i first studied it. Every other explanation covering **uniqueness** always revolved around boundary conditions. Why can there not be multiple potential functions satisfying the same equation and the same boundary values?
 
 ### Poisson’s Equation and Gauss’s Law
 
 In general, for a warmup, Lets take a simple surface bounding some volume with density  $\rho$.
 
-![image.png](attachment:72363360-b65e-4d37-b5d2-5b8697ee73d7:image.png)
+<img width="293" height="234" alt="image" src="https://github.com/user-attachments/assets/c0724210-9565-4926-bc12-26675009c4c6" />
 
 Now, for this surface, we could say $\boxed{\vec{\nabla} \cdot \vec{E} = \dfrac{\rho}{\epsilon_o}}$, where $\vec{\nabla} = \dfrac{\partial}{\partial x}\hat{i} + \dfrac{\partial}{\partial y}\hat{j} + \dfrac{\partial}{\partial z}\hat{k}$. The equation I wrote is called the Poisson’s equation. But $-\vec{\nabla} \phi = \vec{E}$ which, in general terms is basically $-\vec{E} \cdot \vec{dr} = d\phi$.
 
 Substituting Laplace’s idea in **Poisson’s** equation, we get $-\nabla^2 \phi = \dfrac{\rho}{\epsilon_o}$. If $\rho = 0$, the equation we get is called the ‘**Laplace’s equation**’. What does this even mean? Well if $\rho = 0$, there are no bound/free charges in the hypothetical surface.
 
-![image.png](attachment:66d97eca-eb22-4eb9-87ff-9fb5f864686b:image.png)
+<img width="294" height="232" alt="image" src="https://github.com/user-attachments/assets/de4dde16-6791-48f1-bf41-34dfcd56f7a3" />
 
 ### Analyzing an uniform spherical surface
 
 Lets assume an uniformly charged sphere has a potential function such that $V = V(r, \theta, \phi)$ in spherical coordinates. Where $\theta$ is the polar angle and $\phi$ is the azimuthal angle. For more information, read more about spherical coordinates.
 
-![image.png](attachment:2048c3c0-b246-4c43-8e86-d469b3ea7c58:image.png)
+<img width="491" height="368" alt="image" src="https://github.com/user-attachments/assets/5d6f2b29-fb4b-4e4c-ad95-d40c791b29a6" />
+
 
 From $-\nabla^2\phi = \dfrac{\rho}{\epsilon_o}$,
 
@@ -83,4 +90,4 @@ But, lets define another function $V_3(\vec{r}) = V_1(\vec{r}) - V_2(\vec{r})$.
 
 After applying Laplacian we get, $\nabla^2\vec{V_3} = \nabla^2\vec{V_1} - \nabla^2\vec{V_2}$  . But $\nabla^2\vec{V_3}$  turns out to be 0, concluding that $\vec{V_3}$ is also a solution to the Laplacian. Also, $V_3(\vec{r}) = V_1(\vec{r}) - V_2(\vec{r}) = 0$ which is stupid because with this, we get that $V_3(\vec{r})$ is 0 on the surface.  But we just concluded with Poisson’s equation that $V \geq V_o$ where $V_o$ is the non-zero potential at the surface, forcing the solution of the Laplace to be constant (0).
 
-In short the minimum can’t occur anywhere except the boundary but if $V_3(\vec{r})$ exists, $V_1(\vec{r}) = V_2(\vec{r})$which proves our hypotheses that there is only one function that asserts the Laplace’s equation and the condition of boundary for a given surface.
+In short the minimum can’t occur anywhere except the boundary but if $V_3(\vec{r})$ exists, $V_1(\vec{r}) = V_2(\vec{r})$ which proves our hypotheses that there is only one function that asserts the Laplace’s equation and the condition of boundary for a given surface.
