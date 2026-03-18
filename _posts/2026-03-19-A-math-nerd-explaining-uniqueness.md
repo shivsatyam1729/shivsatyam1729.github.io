@@ -31,20 +31,11 @@ lets define $\nabla^2 = \dfrac{\partial^2}{\partial x^2} + \dfrac{\partial^2}{\p
 
 For a uniform spherical shell, the potential doesn’t depend on the polar angle and azimuthal angle. It only depends on the radial distance from the center (0, 0, 0). For a scalar function in spherical coordinate, the Laplacian is 
 
-$$
-\nabla^2 V =
-\frac{1}{r^2}\frac{\partial}{\partial r}\left(r^2\frac{\partial V}{\partial r}\right)
-+
-\frac{1}{r^2\sin\theta}\frac{\partial}{\partial \theta}\left(\sin\theta \cancel{\frac{\partial V}{\partial \theta}}\right)
-+
-\frac{1}{r^2\sin^2\theta}\cancel{\frac{\partial^2 V}{\partial \phi^2}}
-$$
+$\nabla^2 V = \frac{1}{r^2}\frac{\partial}{\partial r}\left(r^2\frac{\partial V}{\partial r}\right) + \frac{1}{r^2\sin\theta}\frac{\partial}{\partial \theta}\left(\sin\theta \cancel{\frac{\partial V}{\partial \theta}}\right) + \frac{1}{r^2\sin^2\theta}\cancel{\frac{\partial^2 V}{\partial \phi^2}}$
 
 We get the Laplacian
 
-$$
-\nabla^2 V =\frac{1}{r^2}\frac{d}{dr}\left(r^2\frac{dV}{dr}\right)
-$$
+$\nabla^2 V =\frac{1}{r^2}\frac{d}{dr}\left(r^2\frac{dV}{dr}\right)$
 
 But, from Gauss’s law we know that the Laplacian of electric potential always equals $-\dfrac{\rho}{\epsilon_o}$.
 
@@ -64,9 +55,7 @@ $V = \dfrac{-\rho r^2}{6 \epsilon_o} + \dfrac{-C_1}{r} + C_2$
 
 For an uniform sphere, $r = 0$ is a valid condition, therefore forcing us to put $C_1 = 0$. Therefore getting $V = \dfrac{-\rho r^2}{6 \epsilon_o} + C_2$. Now lets say that we know the potential at the surface. We could say $V_o = \dfrac{\rho R^2}{6 \epsilon_o} + C_2$. Subtracting $V$ from $V_o$ to get 
 
-$$
-V = V_o + \dfrac{\rho}{6 \epsilon_o}[R^2 - r^2]
-$$
+$V = V_o + \dfrac{\rho}{6 \epsilon_o}[R^2 - r^2]$
 
 The whole point of this derivation is to ponder about the possibilities of potential with a non-uniform body and for a body that could be written by using the spherical coordinates, $r = 0$ would always be a problem. Since $\lim_{r \to0} \dfrac{-C_2}{r} \to -\inf$, we could intuitively say that we would always get an expression like $V = V_o + (...)$ which in turn proves that for $R \gt r$, $V \geq V_o$. Assuming $\rho > 0$.
 
