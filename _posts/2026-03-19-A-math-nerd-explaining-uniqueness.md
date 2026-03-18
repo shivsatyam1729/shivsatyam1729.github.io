@@ -4,7 +4,7 @@ title: "A math nerd's explanation to uniqueness, laplacian and divergence"
 date: 2026-03-16
 ---
 
-The idea of **uniqueness** in electrostatics bothered me when i first studied it. Every other explanation covering **uniqueness** always revolved around boundary conditions. Why can there not be multiple potential functions satisfying the same equation and the same boundary values?
+The idea of uniqueness in electrostatics bothered me when i first studied it. Every other explanation covering uniqueness always revolved around boundary conditions. Why can there not be multiple potential functions satisfying the same equation and the same boundary values?
 
 ### Poisson’s Equation and Gauss’s Law
 
