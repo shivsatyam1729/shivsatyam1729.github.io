@@ -12,9 +12,13 @@ In general, for a warmup, Lets take a simple surface bounding some volume with d
 
 <img width="400" height="234" alt="image" src="https://github.com/user-attachments/assets/c0724210-9565-4926-bc12-26675009c4c6" />
 
-Now, for this surface, we could say $\boxed{\vec{\nabla} \cdot \vec{E} = \dfrac{\rho}{\epsilon_o}}$, where $\vec{\nabla} = \dfrac{\partial}{\partial x}\hat{i} + \dfrac{\partial}{\partial y}\hat{j} + \dfrac{\partial}{\partial z}\hat{k}$. The equation I wrote is called the Poisson’s equation. But $-\vec{\nabla} \phi = \vec{E}$ which, in general terms is basically $-\vec{E} \cdot \vec{dr} = d\phi$.
+Now, for this surface, we could say $\boxed{\vec{\nabla} \cdot \vec{E} = \dfrac{\rho}{\epsilon_o}}$, where $\vec{\nabla} = \dfrac{\partial}{\partial x}\hat{i} + \dfrac{\partial}{\partial y}\hat{j} + \dfrac{\partial}{\partial z}\hat{k}$. The equation I wrote is called the Poisson’s equation. But $-\vec{\nabla} \phi = \vec{E}$ which, in general terms is basically 
 
-Substituting Laplace’s idea in **Poisson’s** equation, we get $-\nabla^2 \phi = \dfrac{\rho}{\epsilon_o}$. If $\rho = 0$, the equation we get is called the ‘**Laplace’s equation**’. What does this even mean? Well if $\rho = 0$, there are no bound/free charges in the hypothetical surface.
+$-\vec{E} \cdot \vec{dr} = d\phi$.
+
+Substituting Laplace’s idea in **Poisson’s** equation, we get $-\nabla^2 \phi = \dfrac{\rho}{\epsilon_o}$. 
+
+If $\rho = 0$, the equation we get is called the ‘**Laplace’s equation**’. What does this even mean? Well if $\rho = 0$, there are no bound/free charges in the hypothetical surface.
 
 <img width="400" height="232" alt="image" src="https://github.com/user-attachments/assets/de4dde16-6791-48f1-bf41-34dfcd56f7a3" />
 
@@ -31,7 +35,7 @@ lets define $\nabla^2 = \dfrac{\partial^2}{\partial x^2} + \dfrac{\partial^2}{\p
 
 For a uniform spherical shell, the potential doesn’t depend on the polar angle and azimuthal angle. It only depends on the radial distance from the center (0, 0, 0). For a scalar function in spherical coordinate, the Laplacian is 
 
-$\nabla^2 V = \frac{1}{r^2}\frac{\partial}{\partial r}\left(r^2\frac{\partial V}{\partial r}\right) + \frac{1}{r^2\sin\theta}\frac{\partial}{\partial \theta}\left(\sin\theta \cancel{\frac{\partial V}{\partial \theta}}\right) + \frac{1}{r^2\sin^2\theta}\cancel{\frac{\partial^2 V}{\partial \phi^2}}$
+$\nabla^2 V = \frac{1}{r^2} \frac{\partial}{\partial r} \left(r^2 \frac{\partial V}{\partial r} \right) + \frac{1}{r^2\sin \theta}\frac{\partial}{\partial \theta}\left(\sin \theta \cancel{\frac{\partial V}{\partial \theta}}\right) + \frac{1}{r^2\sin^2 \theta} \cancel{\frac{\partial^2 V}{\partial \phi^2}}$
 
 We get the Laplacian
 
