@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Why I Left Web Development and What I Gained"
+title: "Why i left web development and what I gained"
 date: 2026-02-22
 ---
 
