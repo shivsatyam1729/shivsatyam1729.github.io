@@ -12,7 +12,7 @@ The Pearsons coefficient is also called the r-value of two data points. Let us d
 $\rho_{xy} = \dfrac{cov(X, Y)}{\sigma_X \cdot \sigma_Y}$
 
 
-where $cov$ is the covariance between $X, Y$ and $\sigma_X$ . But why is correlation dependent on covariance of the Pearsons coefficient?
+where $cov$ is the covariance between $X, Y$ . But why is correlation dependent on covariance?
 
 Lets assume that we have two data columns, height and weight.
 
