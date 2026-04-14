@@ -32,7 +32,7 @@ $Cov(H,W)=\sum_{i=0}^n (H_i - E[H]) \cdot (W_i - E[W])$
 
 
 
-Observe that two values are correlated, they move smoothly with each other. If one moves above the mean the other moves above the mean too. If one moves above the average and one moves below the average, we get a negative correlation.
+Observe that two values are correlated if they move smoothly with each other. If one moves above the mean the other moves above the mean too, we get a positive correlation. If one moves above the average and one moves below the average, we get a negative correlation.
  
 
 For example, in some case if $H_i < E[H]$ and $W_i > E[W]$, we get a negative product and it contributes negatively in the total sum.
