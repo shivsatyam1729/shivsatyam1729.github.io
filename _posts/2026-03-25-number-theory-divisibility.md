@@ -1,5 +1,4 @@
 ---
-
 layout: post
 title: "Number Theory I: Divisibility"
 date: 2026-03-25
