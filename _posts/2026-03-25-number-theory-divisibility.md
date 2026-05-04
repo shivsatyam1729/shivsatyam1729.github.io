@@ -9,15 +9,21 @@ date: 2026-03-25
 Some definitions that are consistent through this article are listed below. Make sure to be familiar with these.
 
 $a | b$ means that $a$ divides $b$
+
 $a \not | \space b$  means that $a$ doesn't divide $b$ 
+
 $(a,b) = gcd(a,b)$
+
 $(a,b) \cdot [a,b] = |ab|$
 
 ### Introduction
 Let $a,b,c$ are integers then
- - If $a|b$ then $a|bc$ for any integer $c$ 
- - if $a|b$ and $b|c$ then $a|c$ 
- - If $a|b$ and $b|a$ then $a=\pm b$
+
+If $a|b$ then $a|bc$ for any integer $c$ 
+
+If $a|b$ and $b|c$ then $a|c$ 
+
+If $a|b$ and $b|a$ then $a=\pm b$
 
 Its not very tough to prove each of them. Infact, I would let the readers do it as an exercise. Let me prove something **relatively** difficult to set a baseline.
 
