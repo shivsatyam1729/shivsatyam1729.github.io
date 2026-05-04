@@ -14,7 +14,7 @@ $a \nmid b$ means that $a$ does not divide $b$
 
 $(a,b) = \gcd(a,b)$
 
-$(a,b)[a,b] = |ab|$
+$(a,b)[a,b] = \mid ab \mid$
 
 ### Introduction
 
@@ -135,7 +135,7 @@ $x_0 = 5,\quad y_0 = -16$
 
 ### Code
 
-```cpp id="a9o1h0"
+```cpp
 int eucledian(int a, int b, int &x, int &y) {
     if (!b) return x = 1, y = 0, a;
     
