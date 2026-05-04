@@ -2,7 +2,7 @@
 layout: post
 title: "Number Theory I: Divisibility"
 date: 2026-03-25
-----------------
+---
 
 A concise introduction to divisibility and the foundations of number theory. This post develops core ideas such as the greatest common divisor, Bézout’s lemma, and the Euclidean algorithm, illustrated with clear examples and a problem solving perspective to build intuition for deeper results.
 
