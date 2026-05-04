@@ -32,20 +32,15 @@ Using the basic principles, find all $n$ such that $n^2 + 1$ is divisible by $n 
 $(n+1) \mid (n^2+1)$
 
 We write
-$$
-n^2 + 1 = (n+1)^2 - 2n
-$$
+$n^2 + 1 = (n+1)^2 - 2n$
 
-So
-$$
-\frac{n^2+1}{n+1} = (n+1) - \frac{2n}{n+1}
-$$
+$\frac{n^2+1}{n+1} = (n+1) - \frac{2n}{n+1}$
 
 Since $(n+1) \mid (n+1)$, we get
 $(n+1) \mid 2n$
 
 Now
-$(n+1) \mid \big(2n - 2(n+1)\big) = -2$
+$(n+1) \mid (2n - 2(n+1)) = -2$
 
 Hence
 $(n+1) \mid 2$
@@ -66,23 +61,17 @@ Let $d$ be a common divisor of $a$ and $b$ such that $d \mid a$ and $d \mid b$. 
 It is denoted by $\gcd(a,b)$ or $(a,b)$. This $g$ is unique.
 
 Two integers are said to be relatively coprime if
-$$
-\gcd(a,b) = 1
-$$
+$\gcd(a,b) = 1$
 
 ### Bézout's Lemma
 
 If $a, b$ are integers, not both zero, then $\gcd(a,b)$ exists and there exist integers $x_0, y_0$ such that
-$$
-\gcd(a,b) = ax_0 + by_0
-$$
+$\gcd(a,b) = ax_0 + by_0$
 
 *Proof by contradiction:*
 
 Let
-$$
-S = { ax + by \mid x,y \in \mathbb{Z},\ ax + by > 0 }
-$$
+$S = { ax + by \mid x,y \in \mathbb{Z},\ ax + by > 0 }$
 
 By the well-ordering principle, $S$ has a smallest element, say $g$. So
 $g = ax + by$
@@ -99,26 +88,17 @@ This contradicts the minimality of $g$. Hence $g \mid a$. Similarly, $g \mid b$.
 
 Given integers $b, c$ with $c > 0$, apply the division algorithm repeatedly:
 
-$$
-b = cq + r_1,\quad 0 < r_1 < c
-$$
-$$
-c = r_1 q_1 + r_2,\quad 0 < r_2 < r_1
-$$
-$$
-r_1 = r_2 q_2 + r_3,\quad 0 < r_3 < r_2
-$$
+$b = cq + r_1,\quad 0 < r_1 < c$
 
-$$
-\cdots
-$$
+$c = r_1 q_1 + r_2,\quad 0 < r_2 < r_1$
 
-$$
-r_{j-2} = r_{j-1} q_{j-1} + r_j
-$$
-$$
-r_{j-1} = r_j q_j
-$$
+$r_1 = r_2 q_2 + r_3,\quad 0 < r_3 < r_2$
+
+$\cdots$
+
+$r_{j-2} = r_{j-1} q_{j-1} + r_j$
+
+$r_{j-1} = r_j q_j$
 
 The last nonzero remainder $r_j$ is $\gcd(b,c)$.
 
@@ -130,43 +110,32 @@ Useful consequences:
 ### Example
 
 Find $\gcd(4840, 1512)$ and integers $x_0, y_0$ such that
-$$
-4840x_0 + 1512y_0 = \gcd(4840,1512)
-$$
+$4840x_0 + 1512y_0 = \gcd(4840,1512)$
 
-$$
-4840 = 3(1512) + 304
-$$
-$$
-1512 = 4(304) + 296
-$$
-$$
-304 = 1(296) + 8
-$$
-$$
-296 = 37(8) + 0
-$$
+$4840 = 3(1512) + 304$
+
+$1512 = 4(304) + 296$
+
+$304 = 1(296) + 8$
+
+$296 = 37(8) + 0$
 
 So $\gcd(4840,1512) = 8$.
 
 Back-substitute:
 
-$$
-8 = 304 - 296
-$$
-$$
-8 = 304 - (1512 - 4 \cdot 304) = 5 \cdot 304 - 1512
-$$
-$$
-8 = 5(4840 - 3 \cdot 1512) - 1512 = 5 \cdot 4840 - 16 \cdot 1512
-$$
+$8 = 304 - 296$
+
+$8 = 304 - (1512 - 4 \cdot 304) = 5 \cdot 304 - 1512$
+
+$8 = 5(4840 - 3 \cdot 1512) - 1512 = 5 \cdot 4840 - 16 \cdot 1512$
 
 Thus
 $x_0 = 5,\quad y_0 = -16$
 
 ### Code
 
-```cpp
+```cpp id="a9o1h0"
 int eucledian(int a, int b, int &x, int &y) {
     if (!b) return x = 1, y = 0, a;
     
