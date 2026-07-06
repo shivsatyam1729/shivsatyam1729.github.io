@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My explanation to Pearson's coefficient, p-value and chi squared test"
+title: "Pearson's coefficient, p-value and chi squared test"
 date: 2026-03-16
 ---
 
