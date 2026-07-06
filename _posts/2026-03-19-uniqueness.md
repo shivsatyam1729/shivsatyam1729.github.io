@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A math nerd's explanation to uniqueness, laplacian and divergence"
+title: "Uniqueness, laplacian and divergence"
 date: 2026-03-16
 ---
 
